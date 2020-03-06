@@ -1,9 +1,9 @@
 Name: www.wifo.ac.at_jart_prj3_wifo_widat_wirtschaftsdaten_e_8.1_e_out.xlsx_r=jnds.xlsx
-Language: 
+Language: en: HIGH (0.999993)
 Creator: boehs
 Creation date: 2017-01-23
 Last modification: 2017-01-23
-MIME type: 
+MIME type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 
 8.1_e_out
 	1/1/14	1/1/15	1/1/16	7/1/16	10/1/16	1/1/17	4/1/17	2/1/17	3/1/17	4/1/17	5/1/17	6/1/17	7/1/17

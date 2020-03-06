@@ -1,9 +1,9 @@
 Name: 11.pptx
-Language: 
+Language: en: HIGH (0.999996)
 Creator: Ania
 Creation date: 
 Last modification: 2018-01-23
-MIME type: 
+MIME type: application/vnd.openxmlformats-officedocument.presentationml.presentation
 
 
 Bus and Coach 

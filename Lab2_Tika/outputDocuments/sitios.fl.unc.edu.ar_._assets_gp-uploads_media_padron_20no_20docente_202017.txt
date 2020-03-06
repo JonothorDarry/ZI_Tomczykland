@@ -1,9 +1,9 @@
 Name: sitios.fl.unc.edu.ar_._assets_gp-uploads_media_padron_20no_20docente_202017.xls
-Language: 
+Language: en: MEDIUM (0.286955)
 Creator: PABLO
 Creation date: 2017-01-19
 Last modification: 2017-01-20
-MIME type: 
+MIME type: application/vnd.ms-excel
 
 Hoja1
 	APELLIDO Y NOMBRE	TIPO	NUMERO	LEGAJO

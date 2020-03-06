@@ -1,9 +1,9 @@
 Name: Laser-induced nanostructuring for applications in biotechnology.pptx
-Language: 
+Language: de: HIGH (0.999997)
 Creator: Ania
 Creation date: 
 Last modification: 2018-01-23
-MIME type: 
+MIME type: application/vnd.openxmlformats-officedocument.presentationml.presentation
 
 Laser-induced nanostructuring for applications in biotechnology
 

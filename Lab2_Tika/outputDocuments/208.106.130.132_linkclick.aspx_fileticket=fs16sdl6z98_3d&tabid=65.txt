@@ -1,9 +1,9 @@
 Name: 208.106.130.132_linkclick.aspx_fileticket=fs16sdl6z98_3d&tabid=65.doc
-Language: 
+Language: en: HIGH (0.999994)
 Creator: Pris
 Creation date: 2017-01-16
 Last modification: 2017-01-16
-MIME type: 
+MIME type: application/msword
 
 Regular Meeting 
 June 6, 2017

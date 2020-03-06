@@ -1,9 +1,9 @@
 Name: docs2.rar
-Language: 
+Language: en: HIGH (0.999995)
 Creator: 
 Creation date: 
 Last modification: 
-MIME type: 
+MIME type: application/x-rar-compressed
 
  
 

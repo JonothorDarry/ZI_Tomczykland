@@ -1,3 +1,4 @@
+import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,6 +18,8 @@ import org.apache.tika.exception.TikaException;
 import org.apache.tika.langdetect.OptimaizeLangDetector;
 import org.apache.tika.language.detect.LanguageResult;
 import org.apache.tika.metadata.Metadata;
+import org.apache.tika.mime.MediaType;
+import org.apache.tika.mime.MimeTypes;
 import org.apache.tika.parser.AutoDetectParser;
 import org.apache.tika.sax.BodyContentHandler;
 import org.xml.sax.SAXException;
@@ -59,8 +62,9 @@ public class Exercise2
 
     private void initLangDetector() throws IOException
     {
-        // TODO initialize language detector (langDetector)
+        // loading languages and creating detector
     	langDetector=new OptimaizeLangDetector();
+    	langDetector.loadModels();
     }
 
     private void processFile(File file) throws IOException, SAXException, TikaException, ParseException
@@ -68,35 +72,39 @@ public class Exercise2
     	DateFormat df = new SimpleDateFormat("yyyy-mm-ddhh:mm:ss");
     	Date dlsave=null, dcreat=null;
     	String creato=null;
-    	
+    	//Just Parsing
     	InputStream stream=new FileInputStream(file);
         AutoDetectParser parser=new AutoDetectParser();
         Metadata meth=new Metadata();
         BodyContentHandler handle = new BodyContentHandler(-1);
         parser.parse(stream, handle, meth);
-        // TODO: extract content, metadata and language from given file
-        // call saveResult method to save the data
         
-        
+        //Extracting metadata
         String[] metadataNames=meth.names();
         for(String name : metadataNames) {		        
             System.out.println(name + ": " + meth.get(name));
             if (name=="Creation-Date" || name=="meta:creation-date" || name=="dcterms:created") dcreat=df.parse(meth.get(name).substring(0, 10)+meth.get(name).substring(11, 19));
             if (name=="Last-Save-Date" || name=="Last-Modified" || name=="meta:save-date") 		dlsave=df.parse(meth.get(name).substring(0, 10)+meth.get(name).substring(11, 19));
             if (name=="creator" || name=="meta:author" || name=="Author") 						creato=meth.get(name);
-            
          }
-        //LanguageResult reslang=langDetector.detect(handle.toString());
-        saveResult(file.getName(), null, creato, dcreat, dlsave, null, handle.toString()); //TODO: fill with proper values
+        //Language, mime type extraction
+        LanguageResult reslang=langDetector.detect(handle.toString());
+        MimeTypes mt=new MimeTypes();
+        InputStream bufferedIn = new BufferedInputStream(stream);
+        MediaType mime=mt.detect(bufferedIn, meth);
+        saveResult(file.getName(), reslang.toString(), creato, dcreat, dlsave, mime.toString(), handle.toString()); //TODO: fill with proper values
     }
 
     private void saveResult(String fileName, String language, String creatorName, Date creationDate,
                             Date lastModification, String mimeType, String content)
     {
     	System.out.println("##############################################");
+    	System.out.println(fileName);
+    	System.out.println(language);
     	System.out.println(creatorName);
     	System.out.println(creationDate);
 		System.out.println(lastModification);
+		System.out.println(mimeType);
 		System.out.println("##############################################");
 
         SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT);

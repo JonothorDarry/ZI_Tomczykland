@@ -1,9 +1,9 @@
 Name: 5.pptx
-Language: 
+Language: es: HIGH (0.999996)
 Creator: Teresa
 Creation date: 2011-01-15
 Last modification: 2011-01-20
-MIME type: 
+MIME type: application/vnd.openxmlformats-officedocument.presentationml.presentation
 
 Realidad de Pobreza Infantil, familiar.. en España.
 0. Presentación de la realidad de pobreza infantil, familiar..

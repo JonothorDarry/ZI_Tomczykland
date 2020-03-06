@@ -1,9 +1,9 @@
 Name: Polymer Extrusion und Compounding.pptx
-Language: 
+Language: de: HIGH (0.999994)
 Creator: Ania
 Creation date: 
 Last modification: 2018-01-23
-MIME type: 
+MIME type: application/vnd.openxmlformats-officedocument.presentationml.presentation
 
 Polymer Extrusion und Compounding
 aktuelle Forschungsarbeiten

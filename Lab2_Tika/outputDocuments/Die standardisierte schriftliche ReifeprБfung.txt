@@ -1,9 +1,9 @@
 Name: Die standardisierte schriftliche ReifeprБfung.pptx
-Language: 
+Language: de: HIGH (0.999996)
 Creator: Ania
 Creation date: 
 Last modification: 2018-01-23
-MIME type: 
+MIME type: application/vnd.openxmlformats-officedocument.presentationml.presentation
 
 Die standardisierte schriftliche Reifeprüfung
 Lebende Fremdsprachen AHS

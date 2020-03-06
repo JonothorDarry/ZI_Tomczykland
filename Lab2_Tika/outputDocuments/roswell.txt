@@ -1,9 +1,9 @@
 Name: roswell.pdf
-Language: 
+Language: en: HIGH (0.999992)
 Creator: FBI
 Creation date: 1997-01-28
 Last modification: 2011-01-08
-MIME type: 
+MIME type: application/pdf
 
 
 F/-  TELEIYPE

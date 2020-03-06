@@ -1,9 +1,9 @@
 Name: www.anhaenger-eduard.at_preisliste_export_xls_hochlader_31_d_.xls
-Language: 
+Language: de: HIGH (0.999997)
 Creator: eduard.nl
 Creation date: 2017-01-24
 Last modification: 2017-01-24
-MIME type: 
+MIME type: application/vnd.ms-excel
 
 Worksheet
 	EDUARD - hochlader - 3.1m - 2017-08-24

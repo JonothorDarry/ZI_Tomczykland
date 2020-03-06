@@ -1,9 +1,9 @@
 Name: Teaching History.pptx
-Language: 
+Language: en: HIGH (0.999997)
 Creator: Ania
 Creation date: 
 Last modification: 2018-01-23
-MIME type: 
+MIME type: application/vnd.openxmlformats-officedocument.presentationml.presentation
 
 Teaching History
 Janet Farrall

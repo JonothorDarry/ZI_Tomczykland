@@ -1,9 +1,9 @@
 Name: 187.87.255.117_sino.consulta_arquivo_id=120539.docx
-Language: 
+Language: pt: HIGH (0.999996)
 Creator: thiago
 Creation date: 2017-01-28
 Last modification: 2017-01-11
-MIME type: 
+MIME type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
 
 
 

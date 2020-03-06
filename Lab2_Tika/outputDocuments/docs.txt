@@ -1,9 +1,9 @@
 Name: docs.zip
-Language: 
+Language: de: HIGH (0.999994)
 Creator: 
 Creation date: 
 Last modification: 
-MIME type: 
+MIME type: application/zip
 
 
 3-brueckenlauf.at_xls.php_type=schule.xls
