@@ -1,5 +1,5 @@
 Name: test.docx
-Language: fr: HIGH (0.994103)
+Language: fr
 Creator: 
 Creation date: 2018-01-30
 Last modification: 2018-01-30

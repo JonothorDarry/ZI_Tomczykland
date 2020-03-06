@@ -1,5 +1,5 @@
 Name: 61.7.166.36_file.php_1_download_std10-06-60.xlsx
-Language: th: HIGH (1.000000)
+Language: th
 Creator: User
 Creation date: 2017-01-13
 Last modification: 2017-01-13

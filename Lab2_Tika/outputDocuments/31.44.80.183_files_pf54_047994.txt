@@ -1,5 +1,5 @@
 Name: 31.44.80.183_files_pf54_047994.xls
-Language: ru: HIGH (0.999998)
+Language: ru
 Creator: Пользователь Windows
 Creation date: 2011-01-16
 Last modification: 2012-01-11

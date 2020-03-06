@@ -1,5 +1,5 @@
 Name: ufo5.pdf
-Language: en: HIGH (0.999995)
+Language: en
 Creator: FBI
 Creation date: 1997-01-17
 Last modification: 2011-01-08

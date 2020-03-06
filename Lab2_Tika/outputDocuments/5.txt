@@ -1,5 +1,5 @@
 Name: 5.pptx
-Language: es: HIGH (0.999996)
+Language: es
 Creator: Teresa
 Creation date: 2011-01-15
 Last modification: 2011-01-20

@@ -1,5 +1,5 @@
 Name: national_invest_comm_aerial_part01.pdf
-Language: en: HIGH (0.999994)
+Language: en
 Creator: 
 Creation date: 2005-01-07
 Last modification: 2011-01-08

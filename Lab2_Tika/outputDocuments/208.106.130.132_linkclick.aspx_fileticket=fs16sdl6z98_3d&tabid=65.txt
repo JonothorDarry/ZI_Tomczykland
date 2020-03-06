@@ -1,5 +1,5 @@
 Name: 208.106.130.132_linkclick.aspx_fileticket=fs16sdl6z98_3d&tabid=65.doc
-Language: en: HIGH (0.999994)
+Language: en
 Creator: Pris
 Creation date: 2017-01-16
 Last modification: 2017-01-16

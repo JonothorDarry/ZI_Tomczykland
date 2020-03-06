@@ -1,5 +1,5 @@
 Name: roswell.pdf
-Language: en: HIGH (0.999992)
+Language: en
 Creator: FBI
 Creation date: 1997-01-28
 Last modification: 2011-01-08

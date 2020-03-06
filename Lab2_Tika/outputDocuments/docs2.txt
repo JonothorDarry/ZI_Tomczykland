@@ -1,5 +1,5 @@
 Name: docs2.rar
-Language: en: HIGH (0.999995)
+Language: en
 Creator: 
 Creation date: 
 Last modification: 

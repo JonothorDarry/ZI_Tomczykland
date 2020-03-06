@@ -1,5 +1,5 @@
 Name: 187.87.255.117_sino.consulta_arquivo_id=120539.docx
-Language: pt: HIGH (0.999996)
+Language: pt
 Creator: thiago
 Creation date: 2017-01-28
 Last modification: 2017-01-11

@@ -1,5 +1,5 @@
 Name: Die standardisierte schriftliche ReifeprБfung Mathematik AHS.pptx
-Language: de: HIGH (0.999995)
+Language: de
 Creator: Ania
 Creation date: 
 Last modification: 2018-01-23

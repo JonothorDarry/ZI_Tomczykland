@@ -92,7 +92,7 @@ public class Exercise2
         MimeTypes mt=new MimeTypes();
         InputStream bufferedIn = new BufferedInputStream(stream);
         MediaType mime=mt.detect(bufferedIn, meth);
-        saveResult(file.getName(), reslang.toString(), creato, dcreat, dlsave, mime.toString(), handle.toString()); //TODO: fill with proper values
+        saveResult(file.getName(), reslang.getLanguage(), creato, dcreat, dlsave, mime.toString(), handle.toString()); //TODO: fill with proper values
     }
 
     private void saveResult(String fileName, String language, String creatorName, Date creationDate,

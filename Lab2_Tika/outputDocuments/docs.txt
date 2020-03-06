@@ -1,5 +1,5 @@
 Name: docs.zip
-Language: de: HIGH (0.999994)
+Language: de
 Creator: 
 Creation date: 
 Last modification: 

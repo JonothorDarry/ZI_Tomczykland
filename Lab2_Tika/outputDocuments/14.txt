@@ -1,5 +1,5 @@
 Name: 14.pptx
-Language: en: HIGH (0.999996)
+Language: en
 Creator: Ania
 Creation date: 
 Last modification: 2018-01-23
