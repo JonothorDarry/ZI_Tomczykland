@@ -18,36 +18,46 @@ L = np.array([L1, L2, L3, L4, L5, L6, L7, L8, L9, L10])
 ITERATIONS = 100
 
 def getM(L):
-    M = np.zeros([10, 10], dtype=float)
+    ll=len(L)
+    M = np.zeros([ll, ll], dtype=float)
     # number of outgoing links
-    c = np.zeros([10], dtype=int)
+    c = np.zeros([ll], dtype=int)
     
     ## TODO 1 compute the stochastic matrix M
-    for i in range(0, 10):
+    for i in range(0, ll):
         c[i] = sum(L[i])
     
-    for i in range(0, 10):
-        for j in range(0, 10):
+    for i in range(0, ll):
+        for j in range(0, ll):
             if L[j][i] == 0: 
                 M[i][j] = 0
             else:
                 M[i][j] = 1.0/c[j]
     return M
 
-def sortis(lees):
-    xv=list(zip(list(lees), range(len(lees))))
-    return sorted(xv, key=lambda x:x[0])
-
 def trustis(q, d):
-    c = np.asarray([sum(L[i])+(0.01 if sum(L[i])==0 else 0) for i in range(len(L))])
+    ll=len(L)
+    c = np.asarray([sum(L[i])+(0.01 if sum(L[i])==0 else 0) for i in range(ll)])
 
-    mtx=np.asarray([[((1-q)*L[y,x])/c[y] for y in range(len(L))] for x in range(len(L))])
+    mtx=np.asarray([[((1-q)*L[y,x])/c[y] for y in range(ll)] for x in range(ll)])
     for x in range(len(mtx)):
         mtx[x,x]-=1
     res=np.asarray([-q*x for x in d])
     return np.linalg.solve(mtx, res)
 
+def sortis(lees):
+    xv=list(zip(list(lees), range(len(lees))))
+    return sorted(xv, key=lambda x:x[0])
 
+def whole(typ, *args):
+    fun=trustis(*args)
+    c=sortis(fun)
+    _=[print(f"index {x[1]} has value {round(x[0], 5)}, : {typ}") for x in c]
+    print()
+
+
+
+#L=np.asarray([[0,1,1,0],[0,0,0,1],[0,1,0,1],[0,0,0,1]])
     
 print("Matrix L (indices)")
 print(L)    
@@ -63,11 +73,7 @@ print(M)
 
 print("PAGERANK")
 q = 0.15
-pr = np.zeros([10], dtype=float)
-fun=trustis(q, [1]*len(L))
-c=sortis(fun)
-print(c)
-print()
+whole("pagerank", q, [1]*len(L))
 
 ### TODO 3: compute trustrank with damping factor q = 0.15
 ### Documents that are good = 1, 2 (indexes = 0, 1)
@@ -77,18 +83,12 @@ print("TRUSTRANK (DOCUMENTS 1 AND 2 ARE GOOD)")
 q = 0.15
 lees=[0,1]
 tr = [int(i in lees)/len(lees) for i in range(len(L))]
-fun=trustis(q, tr)
-c=sortis(fun)
-print(c)
-print()
+whole("trustrank", q, tr)
 
 ### TODO 4: Repeat TODO 3 but remove the connections 3->7 and 1->5 (indexes: 2->6, 0->4) 
 ### before computing trustrank
-print("TRUSTRANK2 (DOCUMENTS 1 AND 2 ARE GOOD)")
+print("TRUSTRANK2 (DOCUMENTS 1 AND 2 ARE GOOD), removed links 2->6 and 0->4")
 L[2,6], L[0,4]=0, 0
-q = 0.15
 lees=[0,1]
 tr = [int(i in lees)/len(lees) for i in range(len(L))]
-fun=trustis(q, tr)
-c=sortis(fun)
-print(c)
+whole("trustrank", q, tr)
