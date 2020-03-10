@@ -91,7 +91,8 @@ public class Exercise1
         return results;
     }
 
-    //"Exercise1.zip"
+    //PDF: Wilbur Karnes z pdf-a jest czytany od 5.cyfry, analogicznie Ellmae Master od 3. cyfry - kolejny od 1.; Przedostatni znowu się sypie, kolejny jest pominięty
+    //XML: Część czytana od 3. a następnie 2. cyfry, ostatni nieprzeczytany
     private LinkedList <String> exercise1b() throws IOException, TikaException, SAXException
     {
         System.out.println("Running exercise 1b...");
@@ -106,8 +107,10 @@ public class Exercise1
 	        PhoneExtractingContentHandler handle = new PhoneExtractingContentHandler(new BodyContentHandler(), meth);
 	        parser.parse(stream, handle, meth);
 	        String[] vk=meth.getValues("phonenumbers");
+	        //System.out.println("   "+entry.getName());
 	        for (int i=0;i<vk.length;i++) {
 	        	results.add(vk[i]);
+	        	//System.out.println(vk[i]);
 	        }
         }
         
